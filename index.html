@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <main class="main-wrapper">
+        <section id="intro-screen">
+            <div id="text-container">
+                <h1 id="intro-title">Black <br>Jack</h1>
+                <button id="play" type="button">Play</button>
+            </div>
+        </section>
+
+        <section id="page-title">
+            <h1>BlackJack</h1>
+            <h2 id="instructions">Press 'New Game' to start the game</h2>
+        </section>
+
+        <section class="game-interface">
+            <div class="dealer-container">
+                <img src="images/dealer.png" alt="illustration of a card dealer">
+                <div id="dealer-cards"></div>
+            </div>
+
+            <div id="dealer-score-container">
+                <h3 id="dealer-score">Dealer's score: </h3>
+            </div>
+
+            <div id="card-container"></div>
+
+            <div id="player-score-container">
+                <h3 id="player-score">Your score: </h3>
+            </div>
+
+            <div class="controls-container">
+                <button id="new-game" type="button">New Game</button>
+                <button class="restart" type="button">Restart</button>
+                <button id="hit" type="button" disabled>Hit</button>
+                <button id="stay" type="button" disabled>Stay</button>
+            </div>
+        </section>
+
+        <section id="popup-screen">
+            <div id="popup-message-box">
+                <div id="popup-text"></div>
+                <button id="close-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z"/></svg>
+                </button>
+                <button class="restart" type="button">Restart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&#169; 2023 Crystal Chen</p>
+    </footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
